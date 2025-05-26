@@ -1,0 +1,31 @@
+// layout {
+//     pane size=1 borderless=true {
+//         plugin location="tab-bar"
+//     }
+//     pane
+//     pane size=1 borderless=true {
+//         plugin location="status-bar"
+//     }
+// }
+
+// layout {
+//     pane split_direction="vertical" {
+//         pane
+//     }
+//     pane size=1 borderless=true {
+//     }
+// }
+
+layout {
+    pane {
+        command "./pane_start.sh"
+        size "75%"
+    }
+    pane {
+        command "./term_start.sh"
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+}
+
