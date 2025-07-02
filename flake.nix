@@ -23,8 +23,6 @@
         shellHook = ''
           # zellij --layout ./zj-rot.kdl
           # exit
-          zsh
-          exit
         '';
       };
     };

@@ -1,4 +1,5 @@
 import math
+
 from matplotlib import pyplot as plt
 
 plt.gca().set_aspect("equal", adjustable="box")
@@ -44,7 +45,8 @@ class Shape:
 
 mungus = Shape([0, 0], [[1, -1], [1, 1], [-1, 1], [-1, -1], [2, 2]])
 mungus.draw("r")
-mungus.rotate(math.pi * (1/8))
+mungus.rotate(math.pi * (1 / 8))
+mungus.rotate(math.pi * (1 / 8))
 mungus.draw("b")
 
 plt.show()
